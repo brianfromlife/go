@@ -1,6 +1,6 @@
 // Run with:
 // go build optimized.go
-// sudo sysctl vm.drop_caches=3; ./optimized <kjvbible_x100.txt >/dev/null
+// sudo sysctl vm.drop_caches=3; ./optimized < kjvbible_x100.txt > /dev/null
 
 package main
 
