@@ -25,10 +25,12 @@ func main() {
 		n, err := os.Stdin.Read(buf)
 		tRead2 := time.Now()
 		dRead += tRead2.Sub(tRead1)
+
 		if err != nil && err != io.EOF {
 			fmt.Fprintln(os.Stderr, err)
 			os.Exit(1)
 		}
+
 		if n == 0 {
 			break
 		}
